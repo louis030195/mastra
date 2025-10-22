@@ -1,5 +1,14 @@
 # @mastra/client-js
 
+## 0.16.5-alpha.0
+
+### Patch Changes
+
+- Add tool call approval ([#8649](https://github.com/mastra-ai/mastra/pull/8649))
+
+- Updated dependencies [[`f743dbb`](https://github.com/mastra-ai/mastra/commit/f743dbb8b40d1627b5c10c0e6fc154f4ebb6e394), [`5df9cce`](https://github.com/mastra-ai/mastra/commit/5df9cce1a753438413f64c11eeef8f845745c2a8)]:
+  - @mastra/core@0.23.0-alpha.0
+
 ## 0.16.4
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @mastra/core
 
+## 0.23.0-alpha.0
+
+### Patch Changes
+
+- Update provider registry and model documentation with latest models and providers ([`f743dbb`](https://github.com/mastra-ai/mastra/commit/f743dbb8b40d1627b5c10c0e6fc154f4ebb6e394))
+
+- Add tool call approval ([#8649](https://github.com/mastra-ai/mastra/pull/8649))
+
 ## 0.22.2
 
 ### Patch Changes

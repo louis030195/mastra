@@ -81,5 +81,9 @@
     "@mastra/voice-speechify": "0.11.10",
     "@mastra/inngest": "0.17.0"
   },
-  "changesets": []
+  "changesets": [
+    "automated-provider-registry-20251022-181340",
+    "fair-donuts-occur",
+    "honest-pianos-roll"
+  ]
 }
