@@ -226,7 +226,6 @@ export class MastraLLMVNext extends MastraBase {
         structuredOutput,
         outputProcessors,
         returnScorerData,
-        llmAISpan,
         modelSpanTracker,
         requireToolApproval,
         agentId,
@@ -255,7 +254,7 @@ export class MastraLLMVNext extends MastraBase {
                 },
                 e,
               );
-              llmAISpan?.error({ error: mastraError });
+              modelSpanTracker?.reportGenerationError({ error: mastraError });
               this.logger.trackException(mastraError);
               throw mastraError;
             }
@@ -301,12 +300,12 @@ export class MastraLLMVNext extends MastraBase {
                 },
                 e,
               );
-              llmAISpan?.error({ error: mastraError });
+              modelSpanTracker?.reportGenerationError({ error: mastraError });
               this.logger.trackException(mastraError);
               throw mastraError;
             }
 
-            llmAISpan?.end({
+            modelSpanTracker?.endGeneration({
               output: {
                 files: props?.files,
                 object: props?.object,
@@ -359,7 +358,7 @@ export class MastraLLMVNext extends MastraBase {
         },
         e,
       );
-      llmAISpan?.error({ error: mastraError });
+      modelSpanTracker?.reportGenerationError({ error: mastraError });
       throw mastraError;
     }
   }

@@ -34,7 +34,6 @@ export function workflowLoopStream<
   modelSettings,
   _internal,
   modelStreamSpan,
-  llmAISpan,
   messageId,
   runId,
   messageList,
@@ -146,11 +145,11 @@ export function workflowLoopStream<
       const executionResult = resumeContext
         ? await run.resume({
             resumeData: resumeContext,
-            tracingContext: { currentSpan: llmAISpan },
+            tracingContext: rest.modelSpanTracker?.getTracingContext(),
           })
         : await run.start({
             inputData: initialData,
-            tracingContext: { currentSpan: llmAISpan },
+            tracingContext: rest.modelSpanTracker?.getTracingContext(),
           });
 
       if (executionResult.status !== 'success') {
