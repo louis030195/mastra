@@ -40,9 +40,9 @@
   },
   "optionalDependencies": {
     "@grpc/grpc-js": "^1.14.0",
-    "@opentelemetry/exporter-trace-otlp-grpc": "^0.205.0",
-    "@opentelemetry/exporter-trace-otlp-http": "^0.205.0",
-    "@opentelemetry/exporter-trace-otlp-proto": "^0.205.0",
+    "@opentelemetry/exporter-trace-otlp-grpc": "^0.206.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.206.0",
+    "@opentelemetry/exporter-trace-otlp-proto": "^0.206.0",
     "@opentelemetry/exporter-zipkin": "^2.1.0"
   },
   "devDependencies": {
